@@ -1,16 +1,19 @@
-<% roll1 = rand(1..6)%>
-<% roll2 = rand(1..6)%>
+<div class="casino-dice-game">
+  <h1>Vegas Dice Roll</h1>
+  <% roll1 = rand(1..6)%>
+  <% roll2 = rand(1..6)%>
 
-<p>
-<%="Die 1:  #{roll1}"%> <br>
-<%="Die 2:  #{roll2}"%> <br>
-<%="Total is:  #{roll1 + roll2}"%> <br>
-<%= link_to "Roll Again!", request.path, class: "button-class" %>
-</p>
+  <p>
+  <%="Die 1:  #{roll1}"%> <br>
+  <%="Die 2:  #{roll2}"%> <br>
+  <%="Total is:  #{roll1 + roll2}"%> <br>
+  <%= link_to "Roll Again!", request.path, class: "button-class" %>
+  </p>
 
-<p>
-  <img src="/images/dice/<%= roll1 %>.svg">
-  <img src="/images/dice/<%= roll2 %>.svg">
-</p>
+  <p>
+    <img src="/images/dice/<%= roll1 %>.svg">
+    <img src="/images/dice/<%= roll2 %>.svg">
+  </p>
 
-<a href="/dice">Run it back!</a>
+  <a href="/dice">Run it back!</a>
+</div>

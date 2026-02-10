@@ -6,7 +6,11 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag "application" %>
+    <% if controller_name == 'dice' %>
+      <%= stylesheet_link_tag "dice" %>
+    <% end %>
   </head>
 
   <body>
