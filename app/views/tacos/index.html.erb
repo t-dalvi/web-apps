@@ -1,1 +1,21 @@
-hello, world!!!
+<%
+fillings = ["mushroom", "avocado", "poblano", "shrimp"]
+%>
+
+<%= fillings %>
+
+
+
+<h1>I love taco time</h1>
+<p>this is an explanation of tacos</p>
+
+<ul>
+  <!--
+  <li>poblano</li>
+  <li>avocado</li>
+  <li>mushroom</li>
+  -->
+  <%for filling in fillings %>
+    <li><%= filling %></li>
+    <%end%>
+</ul>

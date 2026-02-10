@@ -1,0 +1,9 @@
+<% roll1 = rand(1..6)%>
+<% roll2 = rand(1..6)%>
+
+<p>
+<%="Die 1:  #{roll1}"%> <br>
+<%="Die 2:  #{roll2}"%> <br>
+<%="Total is:  #{roll1 + roll2}"%> <br>
+<%= link_to "Roll Again!", request.path, class: "button-class" %>
+</p>
