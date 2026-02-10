@@ -7,3 +7,10 @@
 <%="Total is:  #{roll1 + roll2}"%> <br>
 <%= link_to "Roll Again!", request.path, class: "button-class" %>
 </p>
+
+<p>
+  <img src="/images/dice/<%= roll1 %>.svg">
+  <img src="/images/dice/<%= roll2 %>.svg">
+</p>
+
+<a href="/dice">Run it back!</a>
